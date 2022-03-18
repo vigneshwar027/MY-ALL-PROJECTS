@@ -1,0 +1,7 @@
+l=list(range(10))
+print('',l)
+l.insert(2,'a')
+print('',l)
+b=tuple(range(20))
+print('',b)
+print(b.index(5))
