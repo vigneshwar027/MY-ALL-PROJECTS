@@ -17,7 +17,7 @@ class SuperMarket:
         print('in this instance method', self.brand)
 
     
-    #the class method is something that uses the class variables and you call a object method using the class or its objects
+    #the class method is something that uses the class variables and you call a class method using the class or its objects
     @classmethod
     def info(cls):
         print('the name of the market is', cls.name)
@@ -36,7 +36,7 @@ print(oil.price)
 print(cake.brand)
 print(SuperMarket.name)
 
-#calling the class method
+#calling the class method using the class name and object name
 SuperMarket.info()
 oil.info()
 
