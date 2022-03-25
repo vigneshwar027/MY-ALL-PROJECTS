@@ -35,3 +35,36 @@ def keyarg(*users):
 keyarg('vijay','vikram','vicky')
 
 
+############################
+
+
+# def det(name,age, sex):
+#     print(name)
+
+# det('vick', 21, sex = 'male' ) #u can use positional arg along with key word but pos.arg should given 1st
+
+def total(name,age, *marks): #variable length arguments
+    summ = 0
+    for i in marks:
+        summ = summ + i
+    print(name, age, 'Total=',summ)
+
+total('vick', 21, 78,76,76,76,76) 
+#u can use positional arg along with key word but pos.arg should given 1st
+
+
+#variable lenghth keyword arguments
+
+def data(**scores): # variable length keyword arguments
+    for name,mark in scores.items(): #while accessing dictionaries in loops u shd specify if u need items or keys or values. 
+        print(name,': Scored',mark)
+        
+
+
+
+data(mano=27,vick=32,rocky=43)
+
+a= {'mano': 27, 'vick': 32, 'rocky': 43}
+
+for i in a():
+    print(i)

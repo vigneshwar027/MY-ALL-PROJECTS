@@ -5,7 +5,7 @@ def primenum(n):
             break
        else:
         x=1
-    return x
+    return x 
 a=int(input('enter the number to be checked: '))
 if primenum(a)==0:
     print('the num is not prime')
